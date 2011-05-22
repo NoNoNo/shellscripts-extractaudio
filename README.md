@@ -11,7 +11,7 @@ This will of course work only, if the video file contains an audio track in `MP3
 
 Requires: 
 
-* [`ffmpeg`](http://www.ffmpeg.org/)
+* [`FFmpeg`](http://www.ffmpeg.org/)
 * [`MP4Box`](http://www.tkn.tu-berlin.de/research/evalvid/) (only used for `M4A`; without it iTunes will not recognise the `M4A`)
 
 Examples:
@@ -30,3 +30,4 @@ See also:
 
 * [Wikipedia: *Comparison of container formats*](http://en.wikipedia.org/wiki/Comparison_of_container_formats)
 * [Easy YouTube Video Downloader](http://www.yourvideofile.com/) is a free addon for Firefox, Google Chrome, Opera and Safari that adds a nice download button to every YouTube page
+* [How to compile FFmpeg on MacOS X](http://blog.mameso.com/2010/04/ffmpeg-fur-mac-osx-10-6-compilieren/)
