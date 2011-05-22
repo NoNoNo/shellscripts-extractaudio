@@ -5,7 +5,7 @@ if [ "$1" == "" ] ; then
   echo "https://github.com/NoNoNo/shellscripts-extractaudio"
   echo
   echo "Extracts the audio track of a video file without transcoding:"
-  echo "MP3 or M4A from container formats like wie MOV/AVI/FLV/M4V/MP4,"
+  echo "MP3 or M4A from container formats like MOV/AVI/FLV/M4V/MP4,"
   echo "with autodetection. Syntax: extractaudio INPUT.ext"
   echo "The audio track is saved as INPUT.ext.mp3 or INPUT.ext.m4a"
   echo 
