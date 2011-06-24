@@ -25,6 +25,12 @@ if [ "$?" -eq "0" ]; then
 else
   echo "${AUDIOCODEC}" | grep aac &> /dev/null
   if [ "$?" -eq "0" ]; then
+    which MP4Box > /dev/null
+    if [ "$?" -ne "0" ]; then
+      echo "MP4Box is missing for processing AAC/M4A, or it is not in PATH!"
+      echo "Please download here: http://www.tkn.tu-berlin.de/research/evalvid/"
+      exit
+    fi
     nice ffmpeg -loglevel 0 -i "$1" -vn -acodec copy "$1".temp.aac
     if [ "$?" -eq "0" ]; then
       nice MP4Box -add "$1".temp.aac "$1".m4a
